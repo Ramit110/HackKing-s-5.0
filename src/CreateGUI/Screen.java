@@ -1,3 +1,5 @@
+package CreateGUI;
+
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
@@ -18,7 +20,6 @@ public class Screen {
     public Screen() {
         if(!glfwInit()) {
             /// Handle it
-
             throw new RuntimeException("GLFW Can't INIT");
         }
 

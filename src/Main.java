@@ -1,13 +1,10 @@
 import Enums.State;
-import org.lwjgl.glfw.GLFWVidMode;
-import org.lwjgl.opengl.GL11;
-
+import CreateGUI.*;
 
 import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.system.MemoryUtil.*;
 
 /**
- * Documantation to  be completed.
+ * Documentation to  be completed.
  * All static methods should be here for now.
  *
  * @author Ramit110,
@@ -20,11 +17,12 @@ public class Main implements Runnable {
     private boolean running = true;
     private static Screen screen;
 
-    private State currentState = State.INRO;
+    private State currentState = State.INTRO;
 
     public static void main(String[] args) {
         Main main = new Main();
         screen = new Screen();
+
         main.init();
         main.start();
     }
@@ -51,7 +49,6 @@ public class Main implements Runnable {
         while (running) {
             update();
             render();
-
             if(screen.shouldClose())
                 running = false;
         }
@@ -66,6 +63,11 @@ public class Main implements Runnable {
     private void render() {
         screen.preRender();
 
+        switch (currentState){
+            case INTRO:
+                CreateMenus.createMainMenu(screen);
+                break;
+        }
 
         screen.postRender();
     }

@@ -1,6 +1,6 @@
 package Enums;
 
 public enum State {
-    INRO,
+    INTRO,
     LEVEL1;
 }
