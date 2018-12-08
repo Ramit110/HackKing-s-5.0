@@ -1,6 +1,10 @@
 import java.util.HashMap;
 import javafx.scene.shape.*;
 
+/**
+ * The Player class handles everything that the main character does
+ */
+
 public class Player {
     private final double SPEED = 5;
     private final double MAX_FALL = 20;
@@ -116,20 +120,23 @@ public class Player {
      * @return boolean true if collision is detected
      */
     public boolean isColliding(double points[][]) {
-        Polygon polygon = new Polygon();
-        polygon.getPoints().addAll(new Double[]{
-                points[0][0], points[0][1],
-                points[1][0], points[1][1],
-                    points[2][0], points[2][1],
-                points[3][0], points[3][1],
-        });
-
-        if (polygon.intersects(coord_x, coord_y, WIDTH, HEIGHT)) {
-            loseLife();
-            return true;
-        }
-        else
+        if (isPhased)
             return false;
+        else {
+            Polygon polygon = new Polygon();
+            polygon.getPoints().addAll(new Double[]{
+                    points[0][0], points[0][1],
+                    points[1][0], points[1][1],
+                    points[2][0], points[2][1],
+                    points[3][0], points[3][1],
+            });
+
+            if (polygon.intersects(coord_x, coord_y, WIDTH, HEIGHT)) {
+                loseLife();
+                return true;
+            } else
+                return false;
+        }
     }
 
     /**
@@ -154,10 +161,14 @@ public class Player {
         }
     }
 
+    public boolean isAlive{
+        return isAlive;
+    }
+
     /**
      * What happens if the player has lost a life
      */
-    public void loseLife(){
+    private void loseLife(){
         lives--;
         if (lives<=0)
             isAlive = false;
