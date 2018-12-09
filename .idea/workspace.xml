@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2123662-4dd0-4684-a5c7-53ecb358dea9" name="Default Changelist" comment="Added comments to Player">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TileMaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Imageextractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Imageextractor.java" afterDir="false" />
-    </list>
+    <list default="true" id="b2123662-4dd0-4684-a5c7-53ecb358dea9" name="Default Changelist" comment="Added comments to Player" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -231,10 +226,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="project stru&#9;ACTION&#9;ShowProjectStructureSettings&#10;restar&#9;ACTION&#9;InvalidateCaches" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544321483873" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="SearchEverywhereHistoryKey" value="project str&#9;ACTION&#9;ShowProjectStructureSettings&#10;project stru&#9;ACTION&#9;ShowProjectStructureSettings&#10;restar&#9;ACTION&#9;InvalidateCaches" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544340357537" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -290,7 +285,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18573265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

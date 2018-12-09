@@ -1,13 +1,19 @@
 <component name="libraryTable">
   <library name="lwjgl-stable-2018-12-08-custom">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/lwjgl-stable-2018-12-08-custom" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/lwjgl-stable-2018-12-08-custom" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/generated" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/libraries/dxf/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/libraries/io/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/libraries/net/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/libraries/pdf/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/libraries/serial/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/libraries/svg/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/modes/java/src" />
+      <root url="file://$USER_HOME$/Downloads/processing-3.4-windows64/processing-3.4/tools/MovieMaker/src" />
     </SOURCES>
-    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-stable-2018-12-08-custom" recursive="false" />
-    <jarDirectory url="file://$USER_HOME$/Downloads/lwjgl-stable-2018-12-08-custom" recursive="false" type="SOURCES" />
   </library>
 </component>
