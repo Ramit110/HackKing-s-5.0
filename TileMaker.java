@@ -1,54 +1,46 @@
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+
 public class TileMaker {
 
-    private Color PlatformColor, DisPlatformColor, HurtPlatformColor, ButtonPlatformColor, WallColor, DisWallColor;
-    private Tile Platform, DisPlatform, HurtPlatform, ButtonPlatform, Wall, DisWall;
+    private Color wall;
+    private ArrayList<Tile> tiles;
+    private final double LENGTH = 2;
 
-    public TileMaker(){
-        Platform = new Tile();
-        DisPlatform = new Color(, 174, 201);
-        HurtPlatform = new Color(255, 174, 201);
-        ButtonPlatform = new Color(255, 174, 201);
-        Wall = new Color(255, 174, 201);
-        DisWall = new Color(255, 174, 201);
-        (double x, double y, double height, double width, boolean hurt, boolean solid)
+    public TileMaker(String filename){
+        tiles = new ArrayList<>();
+        wall = new Color(0, 0, 0); // BLACK
+        //portal = new Color(128, 0, 128); // PURPLE
+        //spikes = new Color (237, 28, 36); // RED
+        //appearing_platform = new Color(185, 122, 87); // BROWN/BAIGE
+        //button = new Color (255, 127, 39); // ORANGE
+        //vortex = new Color(255, 174, 201); // PINK
+
+        // START OF MAGIC CODE
+        File imgLoc = new File(filename);
+        BufferedImage img;
+        try {
+            img = ImageIO.read(imgLoc);
+            for (int x=0; x<img.getWidth(); x++) {
+                for (int y = 0; y < img.getHeight(); y++) {
+                    Color color = new Color(img.getRGB(x, y));
+                    tiles.add(new Tile(x+1, y+1, LENGTH, LENGTH, color));
+                }
+            }
+        } catch (IOException ex) {
+            System.err.println(ex.getMessage());
+            ex.printStackTrace();
+        }
+        // END OF MAGIC CODE
     }
 
-    public Tile getPlatfrom()
-    {
-        Tile platform = new Tile()
+    public ArrayList<Tile> getTiles(){
+        return tiles;
     }
-
-    public Tile getDisPlatform()
-    {
-
-    }
-
-    public Tile getHurtPlatfrom()
-    {
-
-    }
-
-    public Tile getButtonPlatfrom()
-    {
-
-    }
-
-    public Tile getWall()
-    {
-
-    }
-
-    public Tile getDisWall()
-    {
-
-    }
-
-    public Tile getPortal()
-    {
-
-    }
-
-
 
 }
 
