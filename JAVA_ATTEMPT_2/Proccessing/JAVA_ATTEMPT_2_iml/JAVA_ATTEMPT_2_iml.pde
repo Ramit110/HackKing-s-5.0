@@ -20,7 +20,11 @@ void draw() {
       drawMenu();
       break;
     case 2:
-      initLevels();
+      if(!done){
+        initLevels();
+        done = true;
+      }
+      drawLevelMenu();
       break;
     default:
       break;
@@ -30,5 +34,6 @@ void draw() {
 void mousePressed() {
   if (rectOver) {
     mode+=1;
+    done = false;
   }
 }

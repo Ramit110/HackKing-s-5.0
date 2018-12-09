@@ -3,9 +3,9 @@ color rectHighlight;
 color currentColor;
 boolean rectOver = false;
 
-int x1 = 1920/2;
-int y1 = 1080/2;
-int btnWidth = 120;
+int x1 = 1280/2-300;
+int y1 = 720/2-30;
+int btnWidth = 600;
 int btnHeight = 60;
 PImage img;
 
@@ -15,7 +15,6 @@ void initItems(){
   currentColor = color(102);
   
   img = loadImage( new File("").getAbsolutePath() + "/Hey.png");
-  
   
   background(currentColor);
 }
@@ -30,7 +29,6 @@ void drawMenu() {
   stroke(255);
   //rect();
   image(img, x1, y1, btnWidth, btnHeight);
-  
 }
 
 void update() {
