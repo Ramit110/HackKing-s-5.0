@@ -2,6 +2,9 @@ import java.io.File;
 
 int mode = 0;
 boolean done;
+color currentColor;
+
+MainMenu mainMenu;
 
 void setup() {
   size(1280, 720);
@@ -9,22 +12,17 @@ void setup() {
   rectMode(CENTER);
   
   done = false;
+  background(currentColor);
 }
 void draw() {
   switch (mode){
     case 0:
-      if(!done){
-        initItems();
-        done=true;
+      if(mainMenu == null){
+        mainMenu = new MainMenu();
       }
-      drawMenu();
+      mainMenu.update();
       break;
-    case 2:
-      if(!done){
-        initLevels();
-        done = true;
-      }
-      drawLevelMenu();
+    case 1:
       break;
     default:
       break;
@@ -32,7 +30,7 @@ void draw() {
 }
 
 void mousePressed() {
-  if (rectOver) {
+  if (mainMenu.overRect()) {
     mode+=1;
     done = false;
   }
