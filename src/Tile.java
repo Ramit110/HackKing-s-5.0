@@ -11,7 +11,11 @@ public class Tile{
         this.y = y;
         this.height = height;
         this.width = width;
+<<<<<<< HEAD:src/Tile.java
+        this.hurt = hurt;
+=======
         //this.hurt = hurt;
+>>>>>>> 002d2ef9bf6ec155f24e379e729c2347179ec535:Tile.java
         this.color = color;
 
     }
@@ -36,6 +40,19 @@ public class Tile{
         return width;
     }
 
+<<<<<<< HEAD:src/Tile.java
+    public boolean getHurt()
+    {
+        return hurt;
+    }
+
+
+    public double[][] getCP(){
+        double[][] arr = {{x, y},  {x+ width, y},{x, y + height},{x + width, y + height}};;
+        return arr;
+    }
+
+=======
     public Color getColor() { return color; }
 
   //  public boolean getHurt()
@@ -50,5 +67,6 @@ public class Tile{
     }
 
 
+>>>>>>> 002d2ef9bf6ec155f24e379e729c2347179ec535:Tile.java
 
 }
